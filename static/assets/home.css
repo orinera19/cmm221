@@ -1,0 +1,51 @@
+header .navbar-tabs {
+  justify-content: center;
+}
+
+.highlight{
+margin-bottom:0 !important;
+}
+
+.highlight .highlight-item {
+  height: 416px;
+  background: url(/assets/images/home/banner/highlight.jpg) no-repeat center/cover;
+  color: #FFDAB9; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.highlight .highlight-item h1{
+  font-size: 150px;
+  font-family: ThaiSans Neue;
+  text-shadow: 5px 5px #FA8072;
+}
+
+.thumbnail{
+  border-top: .1rem solid #ffffff;
+}
+/*.thumbnail .thumbnail-item{
+  border-right: .1rem solid red;
+}
+.thumbnail .thumbnail-item:last-child {
+  border: none;
+}*/
+.thumbnail .thumbnail-item + .thumbnail-item {
+  border-left: .1rem solid #ffffff;
+}
+
+.thumbnail .thumbnail-item{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #F0FFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+.thumbnail .thumbnail-item h4{
+  font-size: 40px;
+  font-family: ThaiSans Neue;
+  text-shadow: 2px 2px #FFB6C1;
+}

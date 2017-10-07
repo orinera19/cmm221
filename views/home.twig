@@ -1,0 +1,197 @@
+<!DOCTYPE html><!--ให้รู้ว่าเป็น html-->
+<html lang="en"><!--กำหนดภาษาหลักให้กับเว็บไซต์-->
+<head>
+	<meta charset="utf-8"><!--กำหนดให้ใช้ภาษาไทยได้-->
+	<title>CMM 19</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"><!--bulma ตัวในframework/foundation(หยุดพัฒนาแล้ว)-->
+	<link rel="stylesheet" href="/assets/home.css"><!--indexต้องอยู่ในassets    /<-(ราก)assets/home.css(ที่เหลือคือsub folder)-->
+</head>
+<body>
+	<header>
+		<div class="has-text-centered"> <!--ไม่รู้จะใส่อะไร ใส่แท็กนี้ก็ได้-->
+		<img src="/assets/images/logo.png" alt="" width="145" height="auto">
+		</div>
+		<nav class="navbar-tabs"><!--menu-->
+			<a href="#" class="navbar-item">WORK</a><!--ใส่#เพื่อให้กดแล้วอยู่ที่เดิม ยังไม่ได้ใส่linkให้มัน-->
+			<a href="#" class="navbar-item">PLAY</a>
+			<a href="#" class="navbar-item">STUDY</a>
+			<a href="#" class="navbar-item">LEARN</a>
+			<a href="#" class="navbar-item">SCHOLARSHIP</a>
+			<a href="#" class="navbar-item">RELAX</a>
+			<a href="#" class="navbar-item">SCHOOL</a>
+			<a href="#" class="navbar-item">JOB</a>
+		</nav><!--ทำให้เว็บเสิร์ชแล้วหาง่ายมากขึ้น++++ แต่ละแท็กถ้าเราใช้ถูกต้องกูเกิ้ลจะชอบมากกว่า-->
+	</header>
+	<main>
+		<section class="banner">
+			<div class="highlight">
+				<div class="columns">
+					<div class="column highlight-item"><!--<div class="column is-5"></div> กำหนดคอลัมจากทั้งหมด12 ถ้ากำหนดเองต้องรวมให้ได้12คือเต็มหน้า-->
+					<h1>นานชื่อระบือไกล</h1>
+					</div>
+				</div>
+			</div>
+			<div class="thumbnail">
+				<div class="columns is-marginless">
+					<div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-1.jpg);">
+						<h4>ปอกู้</h4>
+					</div>
+					<div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-2.jpg);">
+						<h4>คือ</h4>
+					</div>
+					<div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-3.jpg);">
+						<h4>คน</h4>
+					</div>
+					<div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-4.jpg);">
+						<h4>เฬว</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section we-present">
+			<div class="container"> <!--container เป็นตัวกำหนดไม่ให้ตัวคอนเท้นเกินที่กำหนด-->
+				<div class="columns">
+					<div class="column has-text-left">
+						<a href="#">LATEST</a>
+					</div>
+					<div class="column has-text-centered">
+						<a href="#">WE PRESENT</a>
+					</div>
+					<div class="column has-text-right">
+						<a href="#">SEARCH</a>
+					</div>
+				</div>
+				<div class="columns is-multiline"><!--multiline ใช้ตบบรรทัดลงมาเองได้-->
+					<a href="#" class="column is-one-third"><!--is-4ก็ได้ แต่วิธีนี้คือบอกว่าเอา1/3-->
+						<div class="card"><!--card คือ ชื่อdesign-->
+							<div class="card-image">
+								<figure class="image is-3by2"><!--ratio ภาพเป็น2:3-->
+									<img src="/assets/images/home/we-preset/img-1.jpg" alt="image-1"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+								</figure>
+							</div>
+							<div class="card-content">
+								<h5 class="category">Public Space</h5>
+								<h3 class="title is-spaced is-4">
+									Lorem ipsum dolor
+								</h3>
+								<h4 class="subtitle is-6">
+									เรื่องอะไรนะอ่านไม่ออก
+								</h4>
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="column is-one-third"><!--is-4ก็ได้ แต่วิธีนี้คือบอกว่าเอา1/3-->
+						<div class="card"><!--card คือ ชื่อdesign-->
+							<div class="card-image">
+								<figure class="image is-3by2"><!--ratio ภาพเป็น2:3-->
+									<img src="/assets/images/home/we-preset/img-2.jpg" alt="image-2"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+								</figure>
+							</div>
+							<div class="card-content">
+								<h5 class="category">Public Space</h5>
+								<h3 class="title is-spaced is-4">
+									Lorem ipsum dolor
+								</h3>
+								<h4 class="subtitle is-6">
+									เรื่องอะไรนะอ่านไม่ออก
+								</h4>
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="column is-one-third"><!--is-4ก็ได้ แต่วิธีนี้คือบอกว่าเอา1/3-->
+						<div class="card"><!--card คือ ชื่อdesign-->
+							<div class="card-image">
+								<figure class="image is-3by2"><!--ratio ภาพเป็น2:3-->
+									<img src="/assets/images/home/we-preset/img-3.jpg" alt="image-3"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+								</figure>
+							</div>
+							<div class="card-content">
+								<h5 class="category">Public Space</h5>
+								<h3 class="title is-spaced is-4">
+									Lorem ipsum dolor
+								</h3>
+								<h4 class="subtitle is-6">
+									เรื่องอะไรนะอ่านไม่ออก
+								</h4>
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="column is-one-third"><!--is-4ก็ได้ แต่วิธีนี้คือบอกว่าเอา1/3-->
+						<div class="card"><!--card คือ ชื่อdesign-->
+							<div class="card-image">
+								<figure class="image is-3by2"><!--ratio ภาพเป็น2:3-->
+									<img src="/assets/images/home/we-preset/img-4.jpg" alt="image-4"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+								</figure>
+							</div>
+							<div class="card-content">
+								<h5 class="category">Public Space</h5>
+								<h3 class="title is-spaced is-4">
+									Lorem ipsum dolor
+								</h3>
+								<h4 class="subtitle is-6">
+									เรื่องอะไรนะอ่านไม่ออก
+								</h4>
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="column is-one-third"><!--is-4ก็ได้ แต่วิธีนี้คือบอกว่าเอา1/3-->
+						<div class="card"><!--card คือ ชื่อdesign-->
+							<div class="card-image">
+								<figure class="image is-3by2"><!--ratio ภาพเป็น2:3-->
+									<img src="/assets/images/home/we-preset/img-5.jpg" alt="image-5"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+								</figure>
+							</div>
+							<div class="card-content">
+								<h5 class="category">Public Space</h5>
+								<h3 class="title is-spaced is-4">
+									Lorem ipsum dolor
+								</h3>
+								<h4 class="subtitle is-6">
+									เรื่องอะไรนะอ่านไม่ออก
+								</h4>
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="column is-one-third"><!--is-4ก็ได้ แต่วิธีนี้คือบอกว่าเอา1/3-->
+						<div class="card"><!--card คือ ชื่อdesign-->
+							<div class="card-image">
+								<figure class="image is-3by2"><!--ratio ภาพเป็น2:3-->
+									<img src="/assets/images/home/we-preset/img-6.jpg" alt="image-6"><!--alt : อยากให้เวลาภาพไม่ขึ้น จะให้ขึ้นว่าอะไร-->
+								</figure>
+							</div>
+							<div class="card-content">
+								<h5 class="category">Public Space</h5>
+								<h3 class="title is-spaced is-4">
+									Lorem ipsum dolor
+								</h3>
+								<h4 class="subtitle is-6">
+									เรื่องอะไรนะอ่านไม่ออก
+								</h4>
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
