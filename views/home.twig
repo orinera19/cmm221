@@ -1,52 +1,28 @@
-<!DOCTYPE html><!--ให้รู้ว่าเป็น html-->
-<html lang="en"><!--กำหนดภาษาหลักให้กับเว็บไซต์-->
-<head>
-	<meta charset="utf-8"><!--กำหนดให้ใช้ภาษาไทยได้-->
-	<title>CMM 19</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"><!--bulma ตัวในframework/foundation(หยุดพัฒนาแล้ว)-->
-	<link rel="stylesheet" href="/assets/home.css"><!--indexต้องอยู่ในassets    /<-(ราก)assets/home.css(ที่เหลือคือsub folder)-->
-</head>
-<body>
-	<header>
-		<div class="has-text-centered"> <!--ไม่รู้จะใส่อะไร ใส่แท็กนี้ก็ได้-->
-		<img src="/assets/images/logo.png" alt="" width="145" height="auto">
-		</div>
-		<nav class="navbar-tabs"><!--menu-->
-			<a href="#" class="navbar-item">WORK</a><!--ใส่#เพื่อให้กดแล้วอยู่ที่เดิม ยังไม่ได้ใส่linkให้มัน-->
-			<a href="#" class="navbar-item">PLAY</a>
-			<a href="#" class="navbar-item">STUDY</a>
-			<a href="#" class="navbar-item">LEARN</a>
-			<a href="#" class="navbar-item">SCHOLARSHIP</a>
-			<a href="#" class="navbar-item">RELAX</a>
-			<a href="#" class="navbar-item">SCHOOL</a>
-			<a href="#" class="navbar-item">JOB</a>
-		</nav><!--ทำให้เว็บเสิร์ชแล้วหาง่ายมากขึ้น++++ แต่ละแท็กถ้าเราใช้ถูกต้องกูเกิ้ลจะชอบมากกว่า-->
-	</header>
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/assets/home.css">
+{% endblock %}
+
+{% block content %}
 	<main>
 		<section class="banner">
 			<div class="highlight">
 				<div class="columns">
-					<div class="column highlight-item"><!--<div class="column is-5"></div> กำหนดคอลัมจากทั้งหมด12 ถ้ากำหนดเองต้องรวมให้ได้12คือเต็มหน้า-->
-					<h1>นานชื่อระบือไกล</h1>
+					<div class="column highlight-item" style="background-image: url({{highlight.url}});"><!--<div class="column is-5"></div> กำหนดคอลัมจากทั้งหมด12 ถ้ากำหนดเองต้องรวมให้ได้12คือเต็มหน้า-->
+					<h1>{{ highlight.title }}</h1>
 					</div>
 				</div>
 			</div>
 			<div class="thumbnail">
 				<div class="columns is-marginless">
-					<div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-1.jpg);">
-						<h4>ปอกู้</h4>
+					{% for item in thumbnail %}<!--เอาตัวแปรที่ชื่อว่าthumbnail-->
+					<div class="column thumbnail-item" style="background-image: url({{ item.url }});">
+						{{ item.title }}
 					</div>
-					<div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-2.jpg);">
-						<h4>คือ</h4>
-					</div>
-					<div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-3.jpg);">
-						<h4>คน</h4>
-					</div>
-					<div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-4.jpg);">
-						<h4>เฬว</h4>
+					{% endfor %}
 					</div>
 				</div>
-			</div>
 		</section>
 
 		<section class="section we-present">
@@ -193,5 +169,4 @@
 			</div>
 		</section>
 	</main>
-</body>
-</html>
+	{% endblock %}
